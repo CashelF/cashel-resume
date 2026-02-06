@@ -1,0 +1,280 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez + Cashel Fitzgerald
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+  {\Huge \scshape Cashel Fitzgerald} \\ \vspace{1pt}
+  \small \raisebox{-0.1\height} ~ \href{mailto:cashel@utexas.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{cashel@utexas.edu}} ~
+  \href{https://linkedin.com/in/cashelfitzgerald/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/cashelfitzgerald}}  ~
+  \href{https://github.com/CashelF}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/CashelF}} ~
+  \href{https://cashel.dev}{\raisebox{-0.2\height}\faUser\ \underline{cashel.dev}}
+  \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\item
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{Cornell University, NYC — Master of Engineering in Computer Science} & \textit{2025 -- 2026}\\
+\end{tabular*}
+
+\vspace{-8pt}
+
+\item
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{University of Texas at Austin — B.S. in Electrical \& Computer Engineering (GPA 3.8)} & \textit{2021 -- 2025}\\
+\end{tabular*}
+
+\resumeSubHeadingListEnd
+
+\vspace{-18pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Modern Intelligence}{March 2025 -- Present}
+{Machine Learning Engineer Intern}{Austin, TX}
+\linebreak
+\emph{}
+\resumeItemListStart
+\vspace{-18pt}
+\resumeItem{Engineered a distributed training pipeline (AWS multi-node) processing 10M+ custom-labeled frames, utilizing knowledge distillation to compress state-of-the-art transformers for edge deployment.}
+\resumeItem{Trained Co-DETR, a state-of-the-art transformer detector, on a custom aerial dataset, achieving 0.47 mAP, enabling scalable detection and downstream video content classification.}
+\resumeItem{Fused forward-pass ops + BF16, doubling training speed, enabling 3× batch sizes, and boosting inference by 30\%}
+\resumeItem{Built a pre-label script linking our Deformable DETR model to Encord for auto-annotations, cutting labeler workload}
+\resumeItemListEnd
+
+\resumeSubheading
+{8am (formerly AffiniPay)}{May 2024 -- August 2024}
+{Software Engineering Intern}{Austin, TX}
+\linebreak
+\emph{Provider of advanced payment processing and project management solutions for professional services firms.}
+\resumeItemListStart
+\vspace{-8pt}
+\resumeItem{Key contributor to the technical system design that guides the evolution of how AffiniPay bills merchants (\$300M+ annual revenue, \$20B+ yearly transactions) using event-driven architecture.}
+\resumeItem{Created event reactor for Java service to consume Kafka events with merchant data and update billing accounts.}
+\resumeItem{Implemented major behavioral change to Scala microservice to handle HTTP redirects and upload external files to S3.}
+\resumeItem{Built microservice to propagate Kafka partition and offset info, enabling async event tracing through the API gateway.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Favor Delivery}{June 2023 -- August 2023}
+{Software Engineering Intern}{Austin, TX}
+\linebreak
+\emph{On-demand delivery platform connecting customers to efficient delivery services from their favorite local businesses.}
+\resumeItemListStart
+\vspace{-8pt}
+\resumeItem{Implemented a real-time metrics tracking system using Micrometer, Prometheus, and Grafana for integrated merchants.}
+\resumeItem{Automated error monitoring with cross-service alerts, reducing integration failure lead time by 99.3\%.}
+\resumeItem{Refactored the merchant POS system integrations logging infrastructure, enhancing efficiency and maintainability.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Voyant}{May 2022 -- August 2022}
+{Software Developer Intern}{Austin, TX}
+\linebreak
+\emph{Offers tools that support financial advisors' businesses, with a complete suite of investment solutions.}
+% \resumeItemListStart
+% \vspace{-8pt}
+%   \resumeItem{Facilitated client financial software integration utilizing Java and the Spring Boot framework}
+% \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------PROJECTS-----------
+\section{Extracurriculars and Projects}
+\vspace{-5pt}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Activities}{: Texas Luminescence (Director of Engineering), Sanger Learning Center Calculus Tutor, IEEE @ UT}}{}
+\vspace{-26pt}
+\resumeProjectHeading
+{\textbf{Test-Time Speaker Adaptation in VSR} $|$ \emph{Transformers, Computer Vision, Multimodal}}{December 2025}
+\resumeItemListStart
+
+\resumeItem{Built a hypernetwork to output per-sample, gradient-free LoRA for speaker adaptation in visual speech recognition.}
+
+\resumeItem{Integrated adapters into the frozen conformer achieving a 4.1\% relative WER reduction with zero test-time fine-tuning.}
+
+\resumeItemListEnd
+\vspace{-17pt}
+\resumeProjectHeading
+{\textbf{LipRead} $|$ \emph{Pytorch, Numpy, Pandas, CNNs, RNNs, Transfer Learning, Weights \& Biases}}{January 2025}
+\resumeItemListStart
+\resumeItem{Built a lipreading system by using a spatiotemporal convolutional backbone for visual features and an RNN for sequence modeling; trained on short-video data for sentence-level predictions, demonstrating expertise in temporal modeling.}
+\resumeItemListEnd
+\vspace{-17pt}
+\resumeProjectHeading
+{\textbf{PageFox} $|$ \emph{Flask, SQL, React Native, Linear Contextual Bandits, Recommendation System}}{July 2024}
+\resumeItemListStart
+\resumeItem{Designed multi-layered architecture (data models, services, API, client), enabling scalable recommendation serving.}
+\resumeItem{Created a relational database using MySQL with SQLAlchemy ORM, enabling efficient data management and retrieval.}
+\resumeItem{Built a contextual-bandit recommendation system with modular ranking pipeline; dynamically adjusted recommendations based on user interaction signals, improving click-through proxy metrics.}
+\resumeItemListEnd
+\vspace{-17pt}
+\resumeProjectHeading
+{\textbf{LLM Fine-Tuning: Little Lyric Maker} $|$ \emph{Python, GPT-2, Transformers, PyTorch, Weights \& Biases}}{May 2024}
+\resumeItemListStart
+\resumeItem{Fine-tuned GPT-2 for domain-specific lyric generation; evaluated with perplexity and ROUGE metrics.}
+\resumeItemListEnd
+\vspace{-17pt}
+\resumeProjectHeading
+{\textbf{RL Adversarial Combat in Minecraft} $|$ \emph{Deep Q-Learning, Deep Q-Networks, Bootstrapping, Self-Play}}{March 2024}
+\resumeItemListStart
+\resumeItem{Designed a reinforcement learning agent, adapted DQN architectures, and employed bootstrapping and self-play.}
+\resumeItemListEnd
+\vspace{-17pt}
+% \resumeProjectHeading
+%       {\textbf{Facial Micro-Expression Lie Detector} $|$ \emph{Python, XGBoost, Random Forest, SVM, Neural Networks}}{March 2024}
+%       \resumeItemListStart
+%         \resumeItem{Developed a real-time lie detection system, achieving 62\% accuracy in deception detection, surpassing human accuracy}
+%       \resumeItemListEnd
+%       \vspace{-17pt}
+\resumeProjectHeading
+{\textbf{Dermetric} $|$ \href{https://www.cashel.dev/Dermetric}{Link} $|$ \emph{Python, Flask, AWS, Nginx, Scikit-learn, MongoDB, REST}}{November 2023}
+\resumeItemListStart
+\resumeItem{Implemented deep learning skin cancer detection system, hosted using Nginx for reverse proxy, and AWS EC2.}
+\resumeItemListEnd
+\vspace{-17pt}
+\resumeSubHeadingListEnd
+\vspace{5pt}
+
+
+%
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+        \textbf{Languages}{: Python, Java, Scala, JavaScript, HTML, CSS, C/C++, SQL, R} \\
+        \textbf{Technologies/Frameworks}{: PyTorch, TensorFlow, Numpy, Pandas, Docker, Kubernetes, Flask, MongoDB, Linux, Unix, ReactJS, React Native, AWS, EC2, S3, EFS, Lambda, Spring, REST, Grafana, SciKit Learn, MySQL, SQLite, ONNX, Hugging Face Transformers, Kafka, BigQuery, Accelerate, TensorRT, Optuna, ViT, DETR, Reinforcement Learning, Computer Vision, NLP, Transformers, Edge Computing} \\
+        }}
+\end{itemize}
+\vspace{-15pt}
+
+\end{document}
