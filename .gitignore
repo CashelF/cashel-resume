@@ -1,0 +1,19 @@
+# LaTeX auxiliary files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.bbl
+*.blg
+*.dvi
+*.nav
+*.snm
+
+# Optional: Ignore the PDF if you generate it locally and don't want to track it
+# *.pdf
+
+build/
+.vscode/
