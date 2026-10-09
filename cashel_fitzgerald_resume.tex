@@ -23,7 +23,9 @@
 
 \setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
-\input{glyphtounicode}
+\ifdefined\pdfglyphtounicode
+  \input{glyphtounicode}
+\fi
 
 
 %----------FONT OPTIONS----------
@@ -62,8 +64,10 @@
   \vspace{-4pt}\scshape\raggedright\large\bfseries
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
-\pdfgentounicode=1
+% Enable Unicode mapping in pdfTeX; XeTeX/Tectonic handles it automatically.
+\ifdefined\pdfgentounicode
+  \pdfgentounicode=1
+\fi
 
 %-------------------------
 % Custom commands
@@ -108,7 +112,7 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0pt, parsep=0pt]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
@@ -138,14 +142,14 @@
 \resumeSubHeadingListStart
 \item
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{Cornell University, NYC — Master of Engineering in Computer Science (GPA 4.06)} & \textit{2025 -- 2026}\\
+  \textbf{Cornell University, NYC — Master of Engineering in Computer Science} & \textit{2025 -- 2026}\\
 \end{tabular*}
 
 \vspace{-8pt}
 
 \item
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{University of Texas at Austin — B.S. in Electrical \& Computer Engineering (GPA 3.8)} & \textit{2021 -- 2025}\\
+  \textbf{University of Texas at Austin — B.S. in Electrical \& Computer Engineering} & \textit{2021 -- 2025}\\
 \end{tabular*}
 
 \resumeSubHeadingListEnd
@@ -157,13 +161,17 @@
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{Modern Intelligence}{March 2025 -- Present}
+{Zomma}{June 2026 -- Present}
+{CTO}{San Francisco, CA}
+
+\resumeSubheading
+{Modern Intelligence}{March 2025 -- June 2026}
 {Machine Learning Engineer Intern}{Austin, TX}
 \linebreak
 \emph{}
 \resumeItemListStart
 \vspace{-18pt}
-\resumeItem{Engineered a distributed training pipeline (AWS and on-prem multi-node) processing 10M+ custom-labeled frames, utilizing knowledge distillation to compress state-of-the-art transformers for edge deployment.}
+\resumeItem{Engineered a distributed training pipeline (AWS and on-prem multi-node) processing 10M+ custom-labeled frames, utilizing knowledge distillation to compress state-of-the-art transformers for edge deployment, resulting in a 40\% increase in test-set mAP.}
 \resumeItem{Fine-tuned large-scale transformer detectors (Co-DETR, RF-DETR) on custom aerial datasets, achieving 0.47 mAP and optimizing inference latency by 30\% via operator fusion and BF16 quantization.}
 \resumeItem{Built a pre-label script linking our Deformable DETR model to Encord for auto-annotations, cutting labeler workload}
 \resumeItemListEnd
@@ -213,16 +221,6 @@
 \resumeProjectHeading
 {\textbf{Activities}{: Texas Luminescence (Director of Engineering), Sanger Learning Center Calculus Tutor, IEEE @ UT}}{}
 \vspace{-26pt}
-\resumeProjectHeading
-{\textbf{Agentic Knowledge Graph Framework} $|$ \emph{Python, LangChain, Neo4j, LLMs}}{January 2026}
-\resumeItemListStart
-
-\resumeItem{Architected an autonomous agent system capable of grounding LLM actions via a procedural Knowledge Graph, enabling complex multi-step desktop automation.}
-\resumeItem{Implemented a Graph-RAG pipeline to retrieve structured context for reasoning, significantly reducing hallucination rates in few-shot imitation learning tasks.}
-\resumeItem{Designed a shared workflow memory system, allowing agents to generalize learned tasks across different environments.}
-
-\resumeItemListEnd
-\vspace{-17pt}
 \resumeProjectHeading
 {\textbf{Test-Time Speaker Adaptation in VSR} $|$ \emph{Transformers, Computer Vision, Multimodal}}{December 2025}
 \resumeItemListStart
